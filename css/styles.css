@@ -147,15 +147,29 @@ nav ul {
 nav ul li {
     text-align: center;
     border: 1px solid red;
-    /*H*/
-    width: 20%;
-    /*H*/
 }
+
+
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 50%;
+    width: 48%;
+  }
+
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
   }
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
@@ -169,4 +183,15 @@ div.gallery {
     body {
         background-color: lightblue;
     }
+    img {
+        width: 100%;
+        float: right;
+    }
+    div.gallery {
+        margin: 2px;
+        border: 1px solid red;
+      
+        width: 100%;
+      }
+    
 }
